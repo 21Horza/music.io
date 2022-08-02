@@ -1,0 +1,27 @@
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: auto;
+    gap: 2rem;
+    margin: 1rem 2rem;
+    text-align: center;
+
+    .step {
+        color: #fff;
+        background: linear-gradient(90deg, #403b4a, #e7e9bb);
+        border-radius: 10px;
+        
+        h2 {
+            padding: 5px;
+            margin: auto;
+        }
+    }
+}
+
+.formContainer {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 80%;
+    border: 1px solid #fff;
+    margin: auto;
+}

@@ -1,0 +1,16 @@
+@mixin flexCenter($direction, $justContent) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+    justify-content: $justContent;
+}
+
+@mixin gridColums($number, $frNumber) {
+    display: grid;
+    grid-template-columns: repeat($number, $frNumber);
+}
+
+@mixin gridRows($number, $frNumber) {
+    display: grid;
+    grid-template-rows: repeat($number, $frNumber);
+}

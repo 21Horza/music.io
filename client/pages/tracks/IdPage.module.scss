@@ -1,0 +1,67 @@
+.goback {
+    margin: 1rem auto 1rem 3rem;
+    border: none;
+    font-size: 20px;
+    padding: .6rem;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(243, 243, 243),
+     rgb(155, 155, 155));
+}
+
+.infoContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.342);
+    border-radius: 20px;
+
+    img {
+        height: 40%;
+        border-radius: 50%;
+        margin: auto;
+    }
+    
+
+    .items {
+        margin-top: 1rem;
+        color: #fff;
+        min-height: 25rem;
+        display: grid;
+        grid-template-rows: 27px 20px;
+
+        .songName {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .songInfo {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: auto auto;
+            text-align: center;
+        }
+
+        .songText {
+            margin: 2rem;
+            text-align: center;
+        }
+    }
+
+    .item {
+        border: 1px solid #fff;
+    }
+}
+
+
+/* ====== MEDIUM ====== */
+@media screen and (max-width: 1024px) {
+    .infoContainer {
+        grid-template-columns: repeat(1, 1fr);
+
+        img {
+            margin: 2rem auto;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.track {
+    cursor: pointer;
+    width: 90%;
+    background-color: #ffffffba;
+    border-radius: 18px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    margin-top: 1.5rem;
+    transition: 0.5s;
+
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),
+         0 10px 10px rgba(252, 252, 252, 0.22);
+    }
+
+    .trackIcon {
+        font-size: 25px;
+        margin: auto 20px;
+    }
+
+    .trackPic {
+        height: 60px;
+        width: 60px;
+        margin: auto;
+        padding: 5px;
+    }
+    
+    .container {
+        padding: 0.8rem;
+    }
+    
+    .time {
+        margin: auto;
+    }
+
+    .deleteBtn {
+        margin: auto 20px;
+        height: 1.4rem;
+        width: 1.4rem;
+    }
+}

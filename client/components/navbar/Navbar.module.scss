@@ -1,0 +1,19 @@
+@import "../../styles/_mixins.scss";
+@import "../../styles/_colors.scss";
+
+.navContainer {
+    color: #fff;
+    background-color: #00000055;
+    @include gridColums(3, 1fr);
+    text-align: center;
+
+    .link {
+        cursor: pointer;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+
+        &:hover{
+            text-decoration: 3px underline $ligtGreenColor;
+        }
+    }
+}

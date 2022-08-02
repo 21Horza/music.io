@@ -1,0 +1,52 @@
+.formContainer {
+    display: grid;
+    
+    input {
+        padding: 1rem;
+        border: none;
+    }
+    
+    .name, .artist, .text {
+        width: 70vw;
+        margin: auto;
+        height: 8vh;
+        border-radius: 40px;
+        font-size: 30px;
+        margin-top: 1rem;
+    }
+
+    .text {
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.uploadStep {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: .5rem;
+    margin: 10rem;
+}
+
+.btnsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 30%;
+    margin: 1rem 1rem 8rem auto;
+    text-align: center;
+    
+    button {
+        border-radius: 5px;
+        height: 2rem;
+        width: 5rem;
+    }
+}
+
+
+/* ====== MEDIUM ====== */
+@media screen and (max-width: 1024px) {
+    .btnsContainer {
+        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
